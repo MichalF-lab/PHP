@@ -8,8 +8,8 @@
             header('location: kwadrt.php');
             break;
             //--------------------------------------------
-            case 'kwadrat':
-            
+            case 'prostokat':
+            header('location: prostokąt.php');
             break;
         }
     }
