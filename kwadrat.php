@@ -10,7 +10,7 @@
         <form>
         <?php
         if(!empty($_POST['sideA'])){
-            $sideA = str_replace(',','.' ,$_POST['sideA'])
+            $sideA = str_replace(',','.' ,$_POST['sideA']);
             $area=pow($_POST['sideA'],2);
             $circuit = 4*$_POST['sideA'];
             echo <<< RESULT

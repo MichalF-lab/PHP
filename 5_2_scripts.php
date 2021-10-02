@@ -5,7 +5,7 @@
         switch ($_POST['figura'])
         {
             case 'kwadrat':
-            header('location: kwadrt.php');
+            header('location: kwadrat.php');
             break;
             //--------------------------------------------
             case 'prostokat':
