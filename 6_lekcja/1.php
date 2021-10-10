@@ -48,7 +48,7 @@
             // $srednia = $suma / $_POST['ile_typa'];
             $count = 0;
             //echo $_POST['wiek'];
-            //print_r($_POST);
+            print_r($_POST);
             foreach ($_POST as $key => $value)
             {
                 if ($key != 'wiek')
