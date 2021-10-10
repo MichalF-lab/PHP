@@ -6,7 +6,9 @@
     </head>
     <body>
         <h3>Witamy na lotnisku</h3>
-
+        <?php
+         if(!isset($_POST['km'])){
+        echo <<< L
         <form method="POST">
             <input type="number" name="km" value="ile_km"?><br><br>
             <input type="checkbox" name="zwierze"> Czy zabierasz ze sobą zwierze?<br><br>
@@ -16,8 +18,8 @@
             <input type="radio" name="znizka" value="lgbt">LGBT<br><br>
             <input type="submit" value="zatwierdz">
         </form>
+        L;}
 
-        <?php
         if(isset($_POST['km']))
         {
             $suma = $_POST['km'] * 0.3;
@@ -33,7 +35,18 @@
             {
                 $suma *= 0.75;
             }
-            echo $suma;
+            echo "Cena za bilet $suma";
+
+            ?>
+            <br><br>
+            <button onclick=fu()>Wróć</button>
+            <script>
+                function fu()
+                {
+                    history.back();
+                }
+            </script>
+            <?php
         }
         ?>
     </body>
