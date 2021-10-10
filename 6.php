@@ -7,10 +7,9 @@
                 echo <<< FORM
                 <h3>ilosc osób w rodzinie</h3>
                 <form method="POST">
-                <input type='number' name='person' placeholder='podaj ilość osób'><br><br>
-                <input type="submit">
+                    <input type='number' name='person' placeholder='podaj ilość osób'><br><br>
+                    <input type="submit">
                 </form>
-    
                 FORM;
             }
         ?>
@@ -24,11 +23,11 @@
                     $count = $_POST['person'];
                     for($i=0; $i <$count; $i++)
                     {
-                        echo "<input type='number' name='person$i' placeholder='podaj ilość osób'><br><br>";
+                        echo "<input type='number' name='person$i' placeholder='podaj wiek'><br><br>";
                     }
                 echo <<< FORM
                     
-                <input type="submit" name="buttonAVG">
+                <input type="submit" name='buttonAVG'>
                 </form>
     
                 FORM;
@@ -45,7 +44,7 @@
                     $count++;
                     }
                 }
-                echo "Średni wiek" .$avg/$count."<br>";
+                echo "Średni wiek" .$avg/$count ."<br>";
             }
 
         ?>
