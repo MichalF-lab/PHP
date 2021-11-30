@@ -14,10 +14,10 @@
     <body>
         <?php
             //---------------------------------------------------------------
-            $conect = new mysqli("localhost", "root", "", "tbaza_1");
+            $connect = new mysqli("localhost", "root", "", "tbaza_1");
             //---------------------------------------------------------------
             $sql = "select * from `ksiazki`";
-            $result = $conect->query($sql);
+            $result = $connect->query($sql);
             //---------------------------------------------------------------
             echo '<table>';
                 echo <<< naglowek
